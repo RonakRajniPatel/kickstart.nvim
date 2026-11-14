@@ -431,6 +431,9 @@ do
   vim.pack.add { gh 'sindrets/diffview.nvim' }
   require("diffview").setup({})
 
+  vim.pack.add { gh 'NeogitOrg/neogit' }
+  require("diffview").setup({})
+
   -- [[ Colorscheme ]]
   -- You can easily change to a different colorscheme.
   -- Change the name of the colorscheme plugin below, and then
@@ -450,6 +453,10 @@ do
   -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
   vim.cmd.colorscheme 'tokyonight-night'
 
+  vim.pack.add { gh 'f-person/auto-dark-mode.nvim' }
+  require("auto-dark-mode").setup({})
+
+  --
   -- Highlight todo, notes, etc in comments
   vim.pack.add { gh 'folke/todo-comments.nvim' }
   require('todo-comments').setup { signs = false }
