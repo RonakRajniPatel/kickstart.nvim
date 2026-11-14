@@ -873,6 +873,9 @@ do
   vim.keymap.set({ 'n', 'v' }, '<leader>f', function() require('conform').format { async = true } end, { desc = '[F]ormat buffer' })
 end
 
+vim.pack.add { gh 'MeanderingProgrammer/render-markdown.nvim' }
+require('render-markdown').setup({}) -- only mandatory if you want to set custom options
+
 -- ============================================================
 -- SECTION 8: AUTOCOMPLETE & SNIPPETS
 -- blink.cmp and luasnip setup
