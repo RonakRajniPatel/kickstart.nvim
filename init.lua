@@ -417,6 +417,17 @@ do
     },
   }
 
+  vim.pack.add { gh 'folke/flash.nvim' }
+  require("flash").setup({})
+
+  local flash = require("flash")
+
+  vim.keymap.set({ "n", "x", "o" }, "s", flash.jump, { desc = "Flash" })
+  vim.keymap.set({ "n", "x", "o" }, "S", flash.treesitter, { desc = "Flash Treesitter" })
+  vim.keymap.set("o", "r", flash.remote, { desc = "Remote Flash" })
+  vim.keymap.set({ "o", "x" }, "R", flash.treesitter_search, { desc = "Treesitter Search" })
+  vim.keymap.set("c", "<C-s>", flash.toggle, { desc = "Toggle Flash Search" })
+
   -- [[ Colorscheme ]]
   -- You can easily change to a different colorscheme.
   -- Change the name of the colorscheme plugin below, and then
