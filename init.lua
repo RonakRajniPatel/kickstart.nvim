@@ -20,7 +20,6 @@
 =====================================================================
 =====================================================================
 
-TODO: fish shell integration
 TODO: blackhole delete
 TODO: file hierarchy quick view
 TODO: dir switcher
@@ -516,6 +515,8 @@ do
   -- ... and there is more!
   --  Check out: https://github.com/nvim-mini/mini.nvim
 end
+
+vim.opt.shell = "/opt/homebrew/bin/fish"
 
 -- ============================================================
 -- SECTION 5: SEARCH & NAVIGATION
