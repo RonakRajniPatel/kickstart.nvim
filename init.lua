@@ -20,6 +20,12 @@
 =====================================================================
 =====================================================================
 
+TODO: fish shell integration
+TODO: blackhole delete
+TODO: file hierarchy quick view
+TODO: dir switcher
+TODO: leader<'/'> fix, awful ui
+
 What is Kickstart?
 
   Kickstart.nvim is *not* a distribution.
