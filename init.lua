@@ -428,6 +428,9 @@ do
   vim.keymap.set({ "o", "x" }, "R", flash.treesitter_search, { desc = "Treesitter Search" })
   vim.keymap.set("c", "<C-s>", flash.toggle, { desc = "Toggle Flash Search" })
 
+  vim.pack.add { gh 'sindrets/diffview.nvim' }
+  require("diffview").setup({})
+
   -- [[ Colorscheme ]]
   -- You can easily change to a different colorscheme.
   -- Change the name of the colorscheme plugin below, and then
