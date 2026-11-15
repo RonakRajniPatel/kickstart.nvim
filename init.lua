@@ -24,6 +24,7 @@ TODO: blackhole delete
 TODO: file hierarchy quick view
 TODO: dir switcher
 TODO: leader<'/'> fix, awful ui
+TODO: Project Switcher
 
 What is Kickstart?
 
